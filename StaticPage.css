@@ -7,12 +7,12 @@
     --grisClaro: #dfe9f3;
 }
 body{
-    border: 0;
     width: 100%;
     margin: 0;
 }
 h1 {
     text-align: center;
+    font-family: sans-serif;
 }
 .nav-bg{
     background-color: var(--secundario);
@@ -38,7 +38,7 @@ h1 {
 }
 h2{
     text-align: center;
-    margin: 0;
+    font-family: sans-serif;
 }
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.jpg');
@@ -90,19 +90,20 @@ main{
     width: 75%;
     margin: 15px;
     padding: 5%;
-    background-color: white;
-    border: solid black 1px;
-}
+    background-color: var(--blanco);
+    border-radius: 0.4rem;
+    border-style: none;
+    box-shadow: 0px 3px 16px 1px rgba(0,0,0,0.59);
 
+}
 .servicios{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 15px;
 }
 .servicio {
-    
+    color: var(--gris);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +111,12 @@ main{
     justify-content: center;
     height: 100%;
     margin: 10px;
-    
+}
+h3{
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: small;
+    color: #073596;
 }
 .bg-logos{
     background-color: var(--primario);
@@ -120,7 +126,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .contacto{
     display: flex;
@@ -139,52 +144,97 @@ main{
     text-align: center;
     padding: 10px;
 }
-.formulario > p{
-    text-align: center;
-}
 fieldset{
+    display: flex;
+    flex-direction: column;
     border:none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
 }
 legend{
     color: var(--primario);
     font-weight: 900;
-    font-size: 130%;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin: 0.5rem;
 }
 .form{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     width: 100%;
+    box-sizing: border-box;
+    gap: 0.5rem;
     
 }
 .form2{
     color: white;
     font-weight: bold;
+    font-family: sans-serif;
+    font-size: small;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin:0;
     width: 100%;
-    gap: 1rem;
+    box-sizing: border-box;
+
 }
 .form3{
     color: white;
     font-weight: bold;
+    font-family: sans-serif;
+    font-size: small;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin:0;
     width: 100%;
+    box-sizing: border-box;
+
+}
+.form4{
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+label{
+    text-align: start;
 }
 form {
     display:flex;
     flex-direction: column;
-    padding: 3px;
 }
-input{
-  
+.recuadros{
+    border-radius: .2rem;
+    border-style: none;
+    height: 2rem;
     width: 100%;
-    gap: 2rem;
+    box-sizing: border-box;
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 5rem;
+    border-radius: .2rem;
+    border-style: none;
+    box-sizing: border-box;
+}
+.form-boton{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    width: 100%;
 }
 footer{
     text-align: center;
+}
+@media(max-width: 600px)
+{
+    .servicios{
+        display: flex;
+        flex-direction: column;
+    }
 }
