@@ -1,0 +1,190 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro:#212121;
+    --primario: #076aff;
+    --secundario: #073596;
+    --gris: #9c9c9c;
+    --grisClaro: #dfe9f3;
+}
+body{
+    border: 0;
+    width: 100%;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+.nav-principal {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-principal a {
+    display: inline;
+    color: var(--blanco);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 100px;
+}
+.nav-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+h2{
+    text-align: center;
+    margin: 0;
+}
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+}
+.contenido-hero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.caracaslogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+.boton{
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: .75rem;
+    background-color: var(--secundario);
+    text-decoration: none;  
+    text-transform: uppercase; 
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .25rem;
+}
+main{
+
+    background-color: var(--grisClaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#serv_y_con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 15px;
+    padding: 5%;
+    background-color: white;
+    border: solid black 1px;
+}
+
+.servicios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 15px;
+}
+.servicio {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    margin: 10px;
+    
+}
+.bg-logos{
+    background-color: var(--primario);
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.formulario{
+    background-color: var(--gris);
+    border-width: 3px;
+    border-color: var(--gris);
+    border-style: solid;
+    border-radius: 2%;
+    width: 50%;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+.formulario > p{
+    text-align: center;
+}
+fieldset{
+    border:none;
+}
+legend{
+    color: var(--primario);
+    font-weight: 900;
+    font-size: 130%;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.form2{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin:0;
+    width: 100%;
+    gap: 1rem;
+}
+.form3{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin:0;
+    width: 100%;
+}
+form {
+    display:flex;
+    flex-direction: column;
+    padding: 3px;
+}
+input{
+  
+    width: 100%;
+    gap: 2rem;
+}
+footer{
+    text-align: center;
+}
